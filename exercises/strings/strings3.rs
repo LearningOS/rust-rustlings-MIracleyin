@@ -9,9 +9,12 @@ fn trim_me(input: &str) -> String {
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There's multiple ways to do this!
-    let world = " world!";
-    let input = input.to_owned() + world;
-    input.to_string()
+    // let world = " world!";
+    // let input = input.to_owned() + world;
+    // input.to_string()
+    let mut input = input.to_string();
+    input.push_str(" world!");
+    input
 }
 
 fn replace_me(input: &str) -> String {
